@@ -15,7 +15,7 @@ int senserror (int SensAge){
   if (SensAge > 15){
     errormarg = 30;
   }
-  else if (15 >= SensAge >= 5){
+  else if (SensAge > 5){
     errormarg = 15;
   }
   else if(SensAge < 5){
