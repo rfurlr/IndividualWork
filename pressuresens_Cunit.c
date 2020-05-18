@@ -1,8 +1,7 @@
 #include "CUnit/CUnit.h"
 #include "CUnit/Basic.h"
 #include "pressure.h"
-#include <stdlib>
-#include <stdio>
+
 
 void test_senserror (void){
   CU_ASSERT(senserror(20) == 30);
