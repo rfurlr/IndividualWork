@@ -20,7 +20,7 @@ int senserror (int SensAge){
   return errormarg;
 }
 
-void errortest (void){
+void test_senserror (void){
   CU_ASSERT(senserror(20) == 30);
   CU_ASSERT(senserror(10) == 15);
   CU_ASSERT(senserror(2) == 0);
@@ -32,7 +32,7 @@ void errortest (void){
   return sensereading;
  }
  
-void readtest (void){
+void test_sensread (void){
   CU_ASSERT(sensread (20,10) == 15);
   CU_ASSERT(sensread (10,10) == 10);
   CU_ASSERT(sensread (30,50) == 40);
@@ -43,11 +43,7 @@ int truesensread(errormarg, sensreading){
   return truuread;
 }
 
-void truereadtest (void){
-  CU_ASSERT(truesensread(20,15) == 35);
-  CU_ASSERT(truesensread(20,0) == 20);
-  CU_ASSERT(truesensread(15,15) == 30);
-}
+
 
 int main (){
   printf("please enter the age of the sensor and your two sensor readings: \n");
