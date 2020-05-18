@@ -10,5 +10,5 @@ install:
 
 script:
   - echo "Reached Script Section"
-  - gcc  -I CUnit/Headers/basic.h CUnit/Headers/CUnit.h CUnit/Sources/Basic/Basic.c diceroller.c -o output
+  - gcc  -I CUnit/Headers/basic.h CUnit/Headers/CUnit.h CUnit/Sources/Basic/Basic.c PressureSens.c pressuresens_Cunit.c -o output
   - ./output
