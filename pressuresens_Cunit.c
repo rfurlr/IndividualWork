@@ -22,13 +22,13 @@ void test_truesensread (void){
 
 int main(){
     CU_initialize_registry();
-    CU_pSuite suite = CU_add_suite("test_senserror", 0, 0);
-    CU_pSuite suite = CU_add_suite("test_sensread", 0, 0);
-    CU_pSuite suite = CU_add_suite("test_truesensread", 0, 0);
+    CU_pSuite suite1 = CU_add_suite("test_senserror", 0, 0);
+    CU_pSuite suite2 = CU_add_suite("test_sensread", 0, 0);
+    CU_pSuite suite3 = CU_add_suite("test_truesensread", 0, 0);
 
-    CU_add_test(suite, "test_senserror", test_senserror);
-    CU_add_test(suite, "test_sensread", test_sensread);
-    CU_add_test(suite, "test_truesensread", test_truesensread);
+    CU_add_test(suite1, "test_senserror", test_senserror);
+    CU_add_test(suite2, "test_sensread", test_sensread);
+    CU_add_test(suite3, "test_truesensread", test_truesensread);
 
     CU_basic_set_mode(CU_BRM_VERBOSE);
     CU_basic_run_tests();
