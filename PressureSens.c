@@ -7,7 +7,7 @@ int sensreading;
 int truuread;
 int SensAge = 20;
 int press1 = 20;
-int press2 = 20;
+int press2 = 10;
 
 //calculates the margin of error the sensor has based on its age
 int senserror (int SensAge){
@@ -15,7 +15,7 @@ int senserror (int SensAge){
   if (SensAge > 15){
     errormarg = 30;
   }
-  else if (15 => SensAge => 5){
+  else if (15 >= SensAge >= 5){
     errormarg = 15;
   }
   else if(SensAge < 5){
