@@ -42,7 +42,7 @@
 #include <assert.h>
 #include <string.h>
 
-#include "CUnit.h"
+#include "CUnit/CUnit.h"
 #include "TestDB.h"
 #include "Util.h"
 #include "TestRun.h"
