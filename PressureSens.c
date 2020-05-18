@@ -30,6 +30,7 @@ void errortest (void){
  int sensread (int press1, int press2){
   int sum = press1 + press2;
   sensereading  = sum / 2.0;
+  return sensereading;
  }
  
 void readtest (void){
@@ -40,6 +41,7 @@ void readtest (void){
 
 int truesensread(errormarg, sensreading){
   truuread = errormarg + sensreading;
+  return truuread;
 }
 
 void truereadtest (void){
@@ -49,5 +51,9 @@ void truereadtest (void){
 }
 
 int main (){
-  
+  printf("please enter the age of the sensor and your two sensor readings: \n");
+  scanf("%d %d %d", &SensAge, &press1, &press2);
+  senserror(SensAge);
+  sensread(oress1, press2);
+  truesensread(errormarg, sensreading);
 }
