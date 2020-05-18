@@ -10,5 +10,8 @@ install:
 
 script:
   - echo "Reached Script Section"
-  - gcc  -I CUnit/Headers/basic.h CUnit/Headers/CUnit.h CUnit/Sources/Basic/Basic.c PressureSens.c pressuresens_Cunit.c -o output
-  - ./output
+  - gcc PressureSens.c -o output
+  
+  - echo "Reached unit Section"
+  - gcc  -I CUnit/Headers CUnit/Sources/Framework/*.c CUnit/Sources/Basic/Basic.c PressureSens.c pressuresens_Cunit.c -o Bob_Test
+  - ./Bob_Test
