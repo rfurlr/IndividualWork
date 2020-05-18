@@ -20,26 +20,22 @@ int senserror (int SensAge){
   return errormarg;
 }
 
-void test_senserror (void){
-  CU_ASSERT(senserror(20) == 30);
-  CU_ASSERT(senserror(10) == 15);
-  CU_ASSERT(senserror(2) == 0);
-}
 
  int sensread (int press1, int press2){
+  
   int sum = press1 + press2;
+  
   sensereading  = sum / 2.0;
-  return sensereading;
+  
+   return sensereading;
  }
  
-void test_sensread (void){
-  CU_ASSERT(sensread (20,10) == 15);
-  CU_ASSERT(sensread (10,10) == 10);
-  CU_ASSERT(sensread (30,50) == 40);
-}
+
 
 int truesensread(errormarg, sensreading){
+  
   truuread = errormarg + sensreading;
+  
   return truuread;
 }
 
