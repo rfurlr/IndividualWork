@@ -5,7 +5,11 @@
 int errormarg;
 int sensreading;
 int truuread;
+int SensAge = 20;
+int press1 = 20;
+int press1 = 10;
 
+//calculates the margin of error the sensor has based on its age
 int senserror (int SensAge){
   
   if (SensAge > 15){
@@ -15,12 +19,12 @@ int senserror (int SensAge){
     errormarg = 15;
   }
   else if(SensAge < 5){
-    errormarg = 0:
+    errormarg = 0;
   }
   return errormarg;
 }
 
-
+// takes two readings from the sensor then finds the average reading
  int sensread (int press1, int press2){
   
   int sum = press1 + press2;
@@ -31,7 +35,7 @@ int senserror (int SensAge){
  }
  
 
-
+//combines the error based on age to the average sensor reader
 int truesensread(errormarg, sensreading){
   
   truuread = errormarg + sensreading;
@@ -42,9 +46,7 @@ int truesensread(errormarg, sensreading){
 
 
 int main (){
-  printf("please enter the age of the sensor and your two sensor readings: \n");
-  scanf("%d %d %d", &SensAge, &press1, &press2);
   senserror(SensAge);
-  sensread(oress1, press2);
+  sensread(press1, press2);
   truesensread(errormarg, sensreading);
 }
