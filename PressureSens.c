@@ -45,8 +45,4 @@ int truesensread(errormarg, sensreading){
 
 
 
-int pressurestart (){
-  senserror(SensAge);
-  sensread(press1, press2);
-  truesensread(errormarg, sensreading);
-}
+
