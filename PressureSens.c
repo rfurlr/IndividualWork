@@ -45,7 +45,7 @@ int truesensread(errormarg, sensreading){
 
 
 
-int main (){
+int pressurestart (){
   senserror(SensAge);
   sensread(press1, press2);
   truesensread(errormarg, sensreading);
