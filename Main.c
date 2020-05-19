@@ -9,7 +9,7 @@ int press1 = 20;
 int press2 = 10;
 
 int main (){
-  int senserror(SensAge);
-  int sensread(press1, press2);
-  int truesensread(errormarg, sensreading);
+   int SensorError = senserror(SensAge);
+   int SensorRead = sensread(press1, press2);
+   int TrueSensorRead = truesensread(errormarg, sensreading);
 }
