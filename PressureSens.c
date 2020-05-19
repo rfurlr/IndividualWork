@@ -5,9 +5,9 @@
 int errormarg;
 int sensreading;
 int truuread;
-int SensAge = 20;
-int press1 = 20;
-int press2 = 10;
+int SensAge;
+int press1;
+int press2;
 
 //calculates the margin of error the sensor has based on its age
 int senserror (int SensAge){
