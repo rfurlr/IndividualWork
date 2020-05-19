@@ -1,6 +1,6 @@
 #include "pressure.h"
-#include <stdlib>
-#include <stdio>
+#include <stdlib.h>
+#include <stdio.h>
 
 int SensAge = 20;
 int press1 = 20;
