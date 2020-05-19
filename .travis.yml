@@ -13,5 +13,5 @@ script:
   - gcc PressureSens.c -o output
   
   - echo "Reached unit Section"
-  - gcc  -I CUnit/Headers CUnit/Sources/Framework/*.c CUnit/Sources/Basic/Basic.c PressureSens.c pressuresens_Cunit.c -o Bob_Test
-  - ./Bob_Test
+  - gcc  -I CUnit/Headers CUnit/Sources/Framework/*.c CUnit/Sources/Basic/Basic.c PressureSens.c pressuresens_Cunit.c -o Fault_unit_test
+  - ./Fault_unit_test
