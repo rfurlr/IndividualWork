@@ -10,7 +10,7 @@ install:
 
 script:
   - echo "Reached Script Section"
-  - gcc PressureSens.c -o output
+  - gcc PressureSens.c Main.c -o output
   
   - echo "Reached unit Section"
   - gcc  -I CUnit/Headers CUnit/Sources/Framework/*.c CUnit/Sources/Basic/Basic.c PressureSens.c pressuresens_Cunit.c -o Fault_unit_test
